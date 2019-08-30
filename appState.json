@@ -22,7 +22,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "ReRetest700/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "code": "exports.handler = function(event, context, callback) {\n    //test\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
@@ -79,6 +79,17 @@
           "stageDeploymentId": "v6elry",
           "mode": 1
         }
+      },
+      "s3as2TestLahiru": {
+        "name": "s3as2TestLahiru",
+        "type": "S3",
+        "config": {
+          "mode": 1,
+          "bucket": {
+            "region": "us-east-1",
+            "name": "as2-test-lahiru"
+          }
+        }
       }
     },
     "customTemplate": {
@@ -106,7 +117,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1567161600354
+    "lastSave": 1567161787805
   },
   "VCS_STATE": {
     "provider": "GitHub",
